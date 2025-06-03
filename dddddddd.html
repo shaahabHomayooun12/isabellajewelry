@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isabella Jewelry</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      margin: 30px auto;
+      display: block;
+      border-radius: 10px;
+    }
+    .text-block {
+      font-size: 1.4em;
+      padding: 10px 20px;
+      line-height: 1.8;
+    }
+    .contact {
+      margin-top: 40px;
+    }
+    .language-select {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
+  </style>
+  <script>
+    function changeLanguage(lang) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', lang);
+      window.location.href = url.toString();
+    }
+  </script>
+</head>
+<body>
+  <div class="language-select">
+    <select onchange="changeLanguage(this.value)">
+      <option value="tr">🇹🇷 Turkish</option>
+      <option value="ar">🇸🇦 Arabic</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="es">🇪🇸 Spanish</option>
+      <option value="zh">🇨🇳 Chinese</option>
+      <option value="ja">🇯🇵 Japanese</option>
+      <option value="fr" selected>🇫🇷 French</option>
+      <option value="it">🇮🇹 Italian</option>
+    </select>
+  </div>
+
+  <img src="isabella_logo_resized.jpg" alt="Isabella Jewelry Logo" />
+
+  <div class="text-block">
+    <p><strong>هر تکه از جواهرات ما، یک داستان بی‌نظیر از شکوه، هنر و اصالت است.</strong></p>
+  </div>
+
+  <img src="https://i.ibb.co/zVLrZpy/image2.jpg" alt="Gold Jewelry" />
+
+  <div class="contact">
+    <h2>ارتباط با ما</h2>
+    <a href="https://wa.me/qr/C4ZAKMTW3L7SC1" target="_blank">واتساپ</a>
+    <a href="https://www.instagram.com/isabella_and_shahab_jewelry?igsh=MWU5Mnh6ZTZqMHN6" target="_blank">اینستاگرام</a>
+  </div>
+</body>
+</html>
